@@ -12,7 +12,7 @@ function tail(array) {
   }
   return newArray;
 }
-
+//
 // tail - function reference
 // tail() - function call without parameters
 // tail([1,3]) - function call with parameters/arguments
