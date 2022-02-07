@@ -1,7 +1,7 @@
 const findKey = function(obj, callback) {
-  var keysArray = Object.keys(obj);
+  const keysArray = Object.keys(obj);
   for (const element of keysArray) {
-    var value = obj[element];
+    let value = obj[element];
     if (callback(value)) {
       return element;
     }
