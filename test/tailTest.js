@@ -4,5 +4,5 @@ const assertEqual = require('../assertEqual');
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result.length, 2);
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
+tail(words); 
 assertEqual(words.length, 3);
