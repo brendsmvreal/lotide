@@ -1,18 +1,17 @@
+const assert = require('chai').assert;
 const middle = require('../middle');
-const assertArraysEqual = require('../assertArraysEqual');
 
-const findMidNum = [1, 2, 3, 4, 5, 6];
-const midNum = middle(findMidNum);
-assertArraysEqual(midNum, [3, 4]); // passes 
+describe("#middle", () => {
+  it("returns [3, 4] for [1, 2, 3, 4, 5, 6]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [ 3, 4 ]);
+  });
+  
+  it("returns [] for [1, 2]", () => {
+    assert.deepEqual(middle([1, 2]), []);
+  });
 
-const noMidNum = [1,2];
-const noMidNumArr = middle(noMidNum);
-assertArraysEqual(noMidNumArr, []); // passes 
+  it("returns [2] for [1, 2, 3]", () => {
+    assert.deepEqual(middle([1, 2]), []);
+  });
 
-const oddMidArr = [1,2,3];
-const oddNum = middle(oddMidArr);
-assertArraysEqual(oddMidArr, [2,3]); // fails 
-
-const midArrNum = [1,2,3];
-const oneMidNum = middle(midArrNum);
-assertArraysEqual(oneMidNum, [2]); // passes 
+});
