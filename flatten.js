@@ -1,8 +1,8 @@
 const flatten = function(array) {
-  let flattenedArray = []; 
+  let flattenedArray = [];
   for (let i = 0; i < array.length; i++) {
     const currentArray = array[i];
-    if (!Array.isArray(currentArray)){
+    if (!Array.isArray(currentArray)) {
       flattenedArray.push(currentArray);
       continue;
     }

@@ -5,9 +5,9 @@ const eqObjects = function(object1, object2) {
     return false;
   }
   const myKeys = Object.keys(object1);
-  for (let element of myKeys) { 
-    const value1 = object1[element]; 
-    const value2 = object2[element]; 
+  for (let element of myKeys) {
+    const value1 = object1[element];
+    const value2 = object2[element];
     if (Array.isArray(value1) || Array.isArray(value2)) {
       const valueArraysAreEqual = eqArrays(value1, value2);
       if (!valueArraysAreEqual) {

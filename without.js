@@ -5,7 +5,7 @@ const without = function(source, itemsToRemove) {
       if (source[i] === itemsToRemove[j]) {
         break;
       }
-      if (j == itemsToRemove.length - 1) {
+      if (j === itemsToRemove.length - 1) {
         newArray.push(source[i]);
       }
     }
@@ -13,5 +13,5 @@ const without = function(source, itemsToRemove) {
   return newArray;
 };
 
-module.exports = without; 
+module.exports = without;
 
