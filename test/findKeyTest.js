@@ -20,6 +20,6 @@ describe("#findKey", () => {
 
   it("should return undefined for x => x.stars === 100", () => {
     assert.strictEqual(findKey(test, x => x.stars === 100), undefined);
-  });  
+  });
 
 });

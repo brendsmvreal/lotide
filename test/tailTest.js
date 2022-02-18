@@ -15,4 +15,4 @@ describe("#tail", () => {
     assert.deepEqual(tail(words), ['Lighthouse', 'Labs']);
   });
 
-});  
+});
